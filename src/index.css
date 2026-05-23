@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-adventum-crema: #f8fafc;
+  --color-adventum-terracota: #ffedd5;
+  --color-adventum-coral: #ea580c;
+  --color-adventum-noche: #172554;
+  --color-adventum-oro: #fbbf24;
+}
+
+body {
+  background-color: var(--color-adventum-crema);
+}
