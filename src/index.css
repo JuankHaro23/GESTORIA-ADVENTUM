@@ -8,6 +8,38 @@
   --color-adventum-oro: #fbbf24;
 }
 
+/* Desplazamiento suave para toda la página */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-adventum-crema);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar personalizada y elegante */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-adventum-crema);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-adventum-noche);
+  border-radius: 20px;
+  border: 3px solid var(--color-adventum-crema);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-adventum-coral);
+}
+
+/* Animación de flotación constante para imágenes */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
