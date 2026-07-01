@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "adventum-pagina-web"
-  }
+  },
+  "targets": {
+    "adventum-pagina-web": {
+      "hosting": {
+        "principal": [
+          "rutavalencia"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
