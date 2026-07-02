@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ScrollReveal } from '../../../core/ui/ScrollReveal';
+import portadaImg from '../../../core/assets/images/ImagenPortadaInicio.jpg';
 
 export function HomePage() {
   return (
@@ -41,7 +42,11 @@ export function HomePage() {
             {/* Contenedor asimétrico */}
             <div className="relative bg-white p-4 rounded-[3rem] rounded-bl-3xl rounded-tr-3xl shadow-2xl shadow-slate-200/70 border border-slate-100">
               <div className="bg-adventum-noche rounded-[2.5rem] rounded-bl-2xl rounded-tr-2xl h-[28rem] w-full flex items-center justify-center overflow-hidden">
-                <span className="text-adventum-oro font-medium">[ Imagen representativa Valencia ]</span>
+                <img 
+                  src={portadaImg} 
+                  alt="Valencia Inicio" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -53,7 +58,8 @@ export function HomePage() {
         <div className="absolute inset-0 opacity-10">
           <svg width="100%" height="100%"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="currentColor"></circle></pattern></defs><rect width="100%" height="100%" fill="url(#dots)"></rect></svg>
         </div>
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center relative z-10">
+        {/* Cambié grid-cols-4 por md:grid-cols-3 y añadí justify-center */}
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-12 text-center relative z-10 justify-items-center">
           {[
             { value: '98%', label: 'Tasa de Aprobación', delay: 200 },
             { value: '24h', label: 'Respuesta Inicial', delay: 400 },
@@ -64,7 +70,7 @@ export function HomePage() {
                 <div className="text-5xl md:text-6xl font-extrabold text-adventum-oro tracking-tight mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm uppercase tracking-widest font-semibold text-slate-300 pt-2 border-t border-slate-700 w-24">
+                <div className="text-sm uppercase tracking-widest font-semibold text-slate-300 pt-2 border-t border-slate-700 w-32">
                   {stat.label}
                 </div>
               </div>

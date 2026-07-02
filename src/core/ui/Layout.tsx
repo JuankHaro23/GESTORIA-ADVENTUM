@@ -19,16 +19,17 @@ export function Layout() {
             </div>
             
             {/* Menú Desktop */}
-            <div className="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest items-center">
-              <Link to="/" className="hover:text-adventum-oro transition-colors duration-200">Inicio</Link>
-              <Link to="/tramites" className="hover:text-adventum-oro transition-colors duration-200">Trámites</Link>
+            <div className="hidden md:flex space-x-5 font-semibold text-[0.75rem] uppercase tracking-widest items-center">
+              <Link to="/" className="hover:text-adventum-oro transition-colors">Inicio</Link>
+              <Link to="/quienes-somos" className="hover:text-adventum-oro transition-colors">Quiénes Somos</Link>
               
               <div className="relative group h-20 flex items-center">
-                <Link to="/servicios" className="hover:text-adventum-oro transition-colors duration-200 flex items-center gap-1 cursor-pointer">
+                <Link to="/servicios" className="hover:text-adventum-oro transition-colors flex items-center gap-1 cursor-pointer">
                   Servicios
                   <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                 </Link>
                 
+                {/* Dropdown */}
                 <div className="absolute left-0 top-full pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[150] transform translate-y-2 group-hover:translate-y-0">
                   <div className="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(23,37,84,0.2)] border border-slate-100 py-2 overflow-hidden flex flex-col">
                     {[
@@ -46,12 +47,14 @@ export function Layout() {
                 </div>
               </div>
 
-              <Link to="/cita" className="hover:text-adventum-oro transition-colors duration-200">Reserva tu cita</Link>
+              <Link to="/tramites" className="hover:text-adventum-oro transition-colors">Trámites</Link>
+              <Link to="/destino-valencia" className="hover:text-adventum-oro transition-colors">Destino Valencia</Link>
+              <Link to="/contactanos" className="hover:text-adventum-oro transition-colors">Contáctanos</Link>
             </div>
             
             {/* Botón Área Cliente (Desktop) */}
             <div className="hidden md:block">
-              <Link to="/login" className="bg-adventum-coral text-white px-6 py-2.5 rounded-full font-bold hover:opacity-90 transition-all shadow-md shadow-adventum-coral/20 text-sm uppercase tracking-wider">
+              <Link to="/login" className="bg-adventum-coral text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition-all shadow-md shadow-adventum-coral/20 text-[0.75rem] uppercase tracking-wider">
                 Área Cliente
               </Link>
             </div>
@@ -65,11 +68,13 @@ export function Layout() {
 
         {/* Menú Móvil Desplegable */}
         {isOpen && (
-          <div className="md:hidden bg-adventum-noche border-t border-blue-900 p-6 flex flex-col space-y-4 font-semibold uppercase text-sm tracking-widest">
+          <div className="md:hidden bg-adventum-noche border-t border-blue-900 p-6 flex flex-col space-y-4 font-semibold uppercase text-xs tracking-widest">
             <Link to="/" onClick={() => setIsOpen(false)}>Inicio</Link>
-            <Link to="/tramites" onClick={() => setIsOpen(false)}>Trámites</Link>
+            <Link to="/quienes-somos" onClick={() => setIsOpen(false)}>Quiénes Somos</Link>
             <Link to="/servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
-            <Link to="/cita" onClick={() => setIsOpen(false)}>Reserva tu cita</Link>
+            <Link to="/tramites" onClick={() => setIsOpen(false)}>Trámites</Link>
+            <Link to="/destino-valencia" onClick={() => setIsOpen(false)}>Destino Valencia</Link>
+            <Link to="/contactanos" onClick={() => setIsOpen(false)}>Contáctanos</Link>
             <Link to="/login" className="text-adventum-coral" onClick={() => setIsOpen(false)}>Área Cliente</Link>
           </div>
         )}

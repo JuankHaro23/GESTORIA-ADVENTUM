@@ -34,9 +34,9 @@ export const VISADOS_CONTENT = {
       title: "VISADO DE ESTUDIOS",
       whatIsIt: "Es la autorización de residencia que permite a ciudadanos extranjeros permanecer en España por un período superior a 90 días para cursar estudios, maestrías, doctorados o formaciones de especialización en centros educativos autorizados.",
       rules: [
-        "Duración inicial: Se otorga por el tiempo que dure el programa de estudios (generalmente 1 año académico o el ciclo completo de la maestría).",
-        "¿Qué pasa si tus estudios duran más de 6 meses? Si el programa supera los 180 días, el visado estampado en el pasaporte solo sirve para entrar a España. Una vez en territorio español, es obligatorio tramitar la TIE (Tarjeta de Identidad de Extranjero) ante la Policía Nacional dentro de los primeros 30 días desde la llegada.",
-        "¿Se puede trabajar? Sí, actualmente permite trabajar de forma automática hasta 30 horas semanales, siempre que las horas laborales no coincidan con el horario lectivo."
+        { title: "Duración inicial", desc: "Se otorga por el tiempo que dure el programa de estudios (generalmente 1 año académico o el ciclo completo de la maestría)." },
+        { title: "¿Qué pasa si tus estudios duran más de 6 meses?", desc: "Si el programa supera los 180 días, el visado estampado en el pasaporte solo sirve para entrar a España. Una vez en territorio español, es obligatorio tramitar la TIE (Tarjeta de Identidad de Extranjero) ante la Policía Nacional dentro de los primeros 30 días desde la llegada." },
+        { title: "¿Se puede trabajar?", desc: "Sí, actualmente permite trabajar de forma automática hasta 30 horas semanales, siempre que las horas laborales no coincidan con el horario lectivo." }
       ],
       risks: "El Consulado de España en Ecuador es sumamente estricto. La mayoría de denegaciones no ocurren por falta de documentos, sino por errores de forma: omitir cláusulas específicas en los seguros de salud, no justificar correctamente el origen de los fondos económicos o presentar cartas de admisión que no cumplen con los requisitos específicos de la normativa española. Una sola denegación mancha tu historial migratorio.",
       adventumDoes: [
@@ -50,9 +50,9 @@ export const VISADOS_CONTENT = {
       title: "VISADO ACOMPAÑANTE DE ESTUDIANTE",
       whatIsIt: "Es el derecho que tienen los familiares directos de un estudiante internacional (cónyuge, pareja de hecho legalmente constituida e hijos menores de 18 años) para residir legalmente en España de forma simultánea mientras dure la formación del estudiante principal.",
       rules: [
-        "Duración inicial: Está vinculada estrictamente a la duración del visado del estudiante principal. Nace y expira al mismo tiempo.",
-        "¿Qué pasa si la estancia es superior a 6 meses? Al igual que el estudiante, cada acompañante mayor de edad debe tramitar su propia TIE en España durante los primeros 30 días del viaje.",
-        "¿Se puede trabajar? No. Por ley, el visado de familiar de estudiante otorga residencia legal pero no autoriza a trabajar por cuenta ajena ni propia en España."
+        { title: "Duración inicial", desc: "Está vinculada estrictamente a la duración del visado del estudiante principal. Nace y expira al mismo tiempo." },
+        { title: "¿Qué pasa si la estancia es superior a 6 meses?", desc: "Al igual que el estudiante, cada acompañante mayor de edad debe tramitar su propia TIE en España durante los primeros 30 días del viaje." },
+        { title: "¿Se puede trabajar?", desc: "No. Por ley, el visado de familiar de estudiante otorga residencia legal pero no autoriza a trabajar por cuenta ajena ni propia en España." }
       ],
       risks: "Este es uno de los visados más difíciles de conseguir. El Consulado asume que el estudiante va a estudiar, no a migrar con toda su familia por motivos económicos. Por ello, la exigencia financiera se multiplica exponencialmente por cada dependiente y los lazos que demuestren el retorno al país de origen deben estar perfectamente estructurados. Un error en el planteamiento familiar y negarán el visado a todo el grupo.",
       adventumDoes: [
@@ -66,9 +66,9 @@ export const VISADOS_CONTENT = {
       title: "PRÓRROGA DE ESTANCIA POR ESTUDIOS",
       whatIsIt: "Es el procedimiento legal que permite a los estudiantes internacionales que ya se encuentran en territorio español extender su período de residencia legal. Este trámite es indispensable para quienes deciden continuar con sus estudios actuales o iniciar una nueva especialización sin necesidad de regresar a su país de origen.",
       rules: [
-        "Duración de la prórroga: Se concede por el tiempo que dure el nuevo programa formativo presentado (normalmente 1 año académico adicional).",
-        "Plazos legales estrictos: La solicitud debe presentarse obligatoriamente dentro de los 60 días naturales antes de la fecha de caducidad de la TIE actual.",
-        "El requisito del 'Aprovechamiento Académico': Para que España apruebe la prórroga, es obligatorio demostrar jurídicamente que se han superado con éxito las materias, exámenes o el TFM del período anterior."
+        { title: "Duración de la prórroga", desc: "Se concede por el tiempo que dure el nuevo programa formativo presentado (normalmente 1 año académico adicional)." },
+        { title: "Plazos legales estrictos", desc: "La solicitud debe presentarse obligatoriamente dentro de los 60 días naturales antes de la fecha de caducidad de la TIE actual." },
+        { title: "El requisito del 'Aprovechamiento Académico'", desc: "Para que España apruebe la prórroga, es obligatorio demostrar jurídicamente que se han superado con éxito las materias, exámenes o el TFM del período anterior." }
       ],
       risks: "Las Oficinas de Extranjería en España están denegando miles de prórrogas debido a la rigidez con la que evalúan los certificados de notas. Un informe mal redactado, una póliza de seguro médico con lagunas o un formato incorrecto al demostrar los fondos resulta en una denegación fulminante, dejando al estudiante en situación irregular de inmediato.",
       adventumDoes: [
@@ -82,8 +82,8 @@ export const VISADOS_CONTENT = {
       title: "VISADO SCHENGEN",
       whatIsIt: "Es la autorización que permite viajar y transitar libremente por los 29 países del espacio Schengen (incluyendo España) por motivos de turismo, negocios, visitas familiares o la realización de cursos y formaciones cortas.",
       rules: [
-        "Duración máxima: Permite una estancia de máximo 90 días dentro de cualquier período de 180 días.",
-        "¿Qué pasa si requieres quedarte más de 90 días? Este visado no es prorrogable ni modificable desde dentro de España. Debes tramitar obligatoriamente un Visado Nacional de Larga Duración desde el Consulado de origen."
+        { title: "Duración máxima", desc: "Permite una estancia de máximo 90 días dentro de cualquier período de 180 días." },
+        { title: "¿Qué pasa si requieres quedarte más de 90 días?", desc: "Este visado no es prorrogable ni modificable desde dentro de España. Debes tramitar obligatoriamente un Visado Nacional de Larga Duración desde el Consulado de origen." }
       ],
       risks: "Las denegaciones del Visado Schengen bajo la cláusula 'la información presentada no es fiable' han crecido exponencialmente. El Consulado rechaza carpetas enteras si el itinerario de vuelos no coincide perfectamente con las reservas de hotel, o si las cartas de invitación tienen defectos de redacción formal.",
       adventumDoes: [
@@ -111,9 +111,9 @@ export const RESIDENCIAS_CONTENT = {
       title: "RESIDENCIA TRABAJO POR CUENTA PROPIA",
       whatIsIt: "Es la autorización de residencia y trabajo que permite a ciudadanos extranjeros desarrollar una actividad económica por cuenta propia en España, ya sea abriendo un negocio físico, una empresa de servicios o ejerciendo como profesional autónomo (freelance).",
       rules: [
-        "Duración inicial: Se concede generalmente por 1 año (Régimen General) o hasta 3 años (Ley de Emprendedores).",
-        "El requisito del Plan de Viabilidad: Es obligatorio presentar un Plan de Negocio detallado avalado y certificado por organizaciones de autónomos oficiales (UPTA o ATA).",
-        "Capacidad de generar empleo: La normativa valora que el proyecto demuestre el potencial de crear puestos de trabajo locales en el mediano plazo."
+        { title: "Duración inicial", desc: "Se concede generalmente por 1 año (Régimen General) o hasta 3 años (Ley de Emprendedores)." },
+        { title: "El requisito del Plan de Viabilidad", desc: "Es obligatorio presentar un Plan de Negocio detallado avalado y certificado por organizaciones de autónomos oficiales (UPTA o ATA)." },
+        { title: "Capacidad de generar empleo", desc: "La normativa valora que el proyecto demuestre el potencial de crear puestos de trabajo locales en el mediano plazo." }
       ],
       risks: "El 80% de las solicitudes son denegadas debido a la mala estructuración del Plan de Viabilidad económica. Extranjería rechaza carpetas si los flujos de caja no son realistas, si no se demuestra la inversión inicial exacta o si la redacción no cumple con los tecnicismos exigidos.",
       adventumDoes: [
@@ -127,9 +127,9 @@ export const RESIDENCIAS_CONTENT = {
       title: "RESIDENCIA TRABAJO POR CUENTA AJENA",
       whatIsIt: "Es la autorización que permite a un extranjero residir en España y trabajar legalmente para una empresa o empleador español que haya decidido contratarlo formalmente.",
       rules: [
-        "Duración inicial: Habitualmente se otorga por 1 año (Régimen General) o hasta 3 años si se aplica como Profesional Altamente Cualificado (PAC).",
-        "La Situación Nacional de Empleo: Si aplicas desde origen, la empresa debe demostrar que el puesto no pudo ser cubierto por un residente (salvo excepciones). Si modificas desde estudiante, esta limitación no aplica.",
-        "Solvencia del Empleador: La empresa contratante debe demostrar una salud financiera impecable y estar al corriente con Hacienda y la Seguridad Social."
+        { title: "Duración inicial", desc: "Habitualmente se otorga por 1 año (Régimen General) o hasta 3 años si se aplica como Profesional Altamente Cualificado (PAC)." },
+        { title: "La Situación Nacional de Empleo", desc: "Si aplicas desde origen, la empresa debe demostrar que el puesto no pudo ser cubierto por un residente (salvo excepciones). Si modificas desde estudiante, esta limitación no aplica." },
+        { title: "Solvencia del Empleador", desc: "La empresa contratante debe demostrar una salud financiera impecable y estar al corriente con Hacienda y la Seguridad Social." }
       ],
       risks: "El principal enemigo es el desconocimiento de las propias empresas españolas sobre extranjería. Redactan mal contratos u omiten cláusulas del convenio. Extranjería deniega el permiso si detecta que la empresa no tiene la solvencia para pagar tu salario a largo plazo.",
       adventumDoes: [
@@ -143,9 +143,9 @@ export const RESIDENCIAS_CONTENT = {
       title: "RESIDENCIA PARA LA BÚSQUEDA DE EMPLEO",
       whatIsIt: "Es un permiso de residencia diseñado exclusivamente para estudiantes internacionales que han finalizado sus estudios de educación superior en España y desean quedarse en el país para buscar un empleo adecuado a su nivel de cualificación o poner en marcha un proyecto empresarial.",
       rules: [
-        "Duración máxima: Se concede por un período máximo e improrrogable de 24 meses (2 años).",
-        "Plazos de solicitud milimétricos: Debe solicitarse obligatoriamente dentro de los 60 días naturales anteriores a la fecha de caducidad de tu TIE o dentro de los 90 días naturales posteriores.",
-        "Nivel Académico Exigido: Solo pueden optar estudiantes que hayan culminado estudios de Grado, Máster Oficial, Máster de Formación Permanente o Doctorado (Nivel 6, 7 u 8 MEC)."
+        { title: "Duración máxima", desc: "Se concede por un período máximo e improrrogable de 24 meses (2 años)." },
+        { title: "Plazos de solicitud milimétricos", desc: "Debe solicitarse obligatoriamente dentro de los 60 días naturales anteriores a la fecha de caducidad de tu TIE o dentro de los 90 días naturales posteriores." },
+        { title: "Nivel Académico Exigido", desc: "Solo pueden optar estudiantes que hayan culminado estudios de Grado, Máster Oficial, Máster de Formación Permanente o Doctorado (Nivel 6, 7 u 8 MEC)." }
       ],
       risks: "Extranjería evalúa la concesión con lupa. El motivo principal de denegación es el estatus de la institución educativa (no todos los títulos propios son válidos) y errores en la acreditación del seguro médico o cálculo de fondos económicos. Un error te deja fuera de plazo de inmediato.",
       adventumDoes: [
@@ -160,24 +160,11 @@ export const RESIDENCIAS_CONTENT = {
 export const VALENCIA_VIP_CONTENT = {
   header: "Aterriza con la tranquilidad de tener a alguien esperándote.",
   intro: "Valencia es una ciudad maravillosa para vivir, pero llegar sin conocer a nadie ni saber dónde dormir puede ser difícil. Queremos ser tu familia de este lado del mundo. Nos encargamos de que tu transición sea bonita, segura y muy feliz.",
-  alert: "La demanda de alojamiento para estudiantes en Valencia es una de las más altas de España. No dejes tu llegada a la aventura; asegura tu espacio con profesionales en el destino.",
   includes: [
     { title: "Búsqueda de tu nuevo hogar", desc: "Buscamos y verificamos opciones de pisos o habitaciones en zonas universitarias seguras antes de que viajes, evitándote estafas a la distancia." },
     { title: "Bienvenida en el aeropuerto", desc: "Te recogemos personalmente cuando aterrices en Valencia para llevarte directo a tu nuevo hogar. ¡Cero pérdidas!" },
     { title: "Tus primeras llaves", desc: "Te entregamos tu habitación o piso listo para entrar a vivir, con todo en orden para tu comodidad." },
-    { title: "Trámites locales", desc: "Te guiamos paso a paso para sacar tu tarjeta de transporte, tu línea móvil y tus citas de registro legal en la ciudad (empadronamiento)." }
-  ],
-  stats: [
-    { icon: "☀️", title: "+300 días de sol al año", desc: "Olvídate del invierno gris. Valencia goza de una temperatura media anual de 19°C. La vida se hace al aire libre." },
-    { icon: "🎓", title: "Capital Universitaria", desc: "Más de 100.000 estudiantes llenan de vida la ciudad. Es uno de los destinos líderes en Europa para estudiantes internacionales." },
-    { icon: "🌊", title: "Playas Urbanas", desc: "A diferencia de otras ciudades, las playas están integradas. Llegarás en tranvía o bici en menos de 20 minutos desde el campus." },
-    { icon: "🌳", title: "El Jardín del Turia", desc: "Un antiguo río convertido en un oasis verde de 9 km. La 'autopista verde' para ir a clases a pie o en patinete." }
-  ],
-  reasons: [
-    { title: "Coste de vida un 30% más accesible", desc: "Valencia es notablemente más económica que Madrid o Barcelona. Tu presupuesto rendirá muchísimo más." },
-    { title: "Vivienda Estudiantil", desc: "El coste de las habitaciones en pisos compartidos sigue estando muy por debajo de los precios prohibitivos de las grandes capitales." },
-    { title: "Distancias humanas", desc: "Es una ciudad plana y compacta. Todo está a un paseo de distancia o a unos minutos en una red de transporte público moderna." },
-    { title: "Seguridad Absoluta", desc: "Valencia es una de las ciudades más seguras de toda Europa. Puedes caminar de noche por sus calles con total tranquilidad." }
+    { title: "Trámites locales con acompañamiento", desc: "Te guiamos paso a paso para sacar tu tarjeta de transporte, tu línea móvil y tus citas de registro legal en la ciudad (empadronamiento)." }
   ]
 };
 
